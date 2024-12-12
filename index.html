@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotel Booking Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="intern.js" defer></script>
+</head>
+<body>
+    <fieldset class="container">
+        <div class="form-wrapper">
+            <center><h3>HOTEL BOOKING REGISTRATION FORM</h3></center>
+            <div class="form-group">
+                <label>First Name: <span class="required">*</span></label>
+                <input type="text" id="FirstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label>Last Name: <span class="required">*</span></label>
+                <input type="text" id="LastName" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label>Check-in Date: <span class="required">*</span></label>
+                <input type="date" id="CheckInDate" required>
+            </div>
+            <div class="form-group">
+                <label>Total No of Days: <span class="required">*</span></label>
+                <input type="number" id="TotalNoofDays" placeholder="Enter number of days" required>
+            </div>
+            <div class="form-group">
+                <label>Total No of Persons: <span class="required">*</span></label>
+                <input type="number" id="TotalNoofPersons" placeholder="Enter number of persons" required>
+            </div>
+            <h3>Room Details</h3>
+            <div class="form-group">
+                <label>Room Type:</label>
+                <select id="RoomType">
+                    <option value="0">Select</option>
+                    <option value="2500">Delux Room (₹2500)</option>
+                    <option value="4000">Suite Room (₹4000)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Amenities:</label>
+                <select id="Amenities">
+                    <option value="0">Select</option>
+                    <option value="1000">AC (₹1000)</option>
+                    <option value="300">Locker (₹300)</option>
+                </select>
+            </div>
+            <h3>Payment Details</h3>
+            <div class="form-group">
+                <label>Advance Payment: <span class="required">*</span></label>
+                <input type="number" id="AdvanceAmount" placeholder="Enter advance amount" required>
+            </div>
+            <button id="calculateButton">Calculate</button>
+            <h3>Summary</h3>
+            <div class="form-group">
+                <label>Total Room Cost:</label>
+                <input type="text" id="TotalRoomCost" readonly>
+            </div>
+            <div class="form-group">
+                <label>Total Amenities Cost:</label>
+                <input type="text" id="TotalAmenitiesCost" readonly>
+            </div>
+            <div class="form-group">
+                <label>Additional Charges:</label>
+                <input type="text" id="AdditionalCharges" readonly>
+            </div>
+            <div class="form-group">
+                <label>Total Cost:</label>
+                <input type="text" id="TotalCost" readonly>
+            </div>
+            <div class="form-group">
+                <label>Balance Amount:</label>
+                <input type="text" id="BalanceAmount" readonly>
+            </div>
+        </div>
+    </fieldset>
+</body>
+</html>
